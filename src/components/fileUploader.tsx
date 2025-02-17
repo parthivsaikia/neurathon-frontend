@@ -36,10 +36,10 @@ const FileUploader = () => {
     }
     return (
       <div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <input type="file" onChange={handleFileChange} />
           {file && status !== "uploading" && (
-            <button onClick={handleSubmit}>Upload</button>
+            <button type="submit">Upload</button>
           )}
         </form>
         <div>{summary}</div>
