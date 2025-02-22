@@ -4,7 +4,7 @@
 	2-20-2025
 */
 
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface GradientTextProps {
   children: ReactNode;
