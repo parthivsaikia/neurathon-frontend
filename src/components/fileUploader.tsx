@@ -24,7 +24,12 @@ import axios from "axios";
 
 export type UploadStatus = "idle" | "uploading" | "success" | "error";
 
-const FileUploader = ({ summary, setSummary }) => {
+interface FileUploaderProps {
+  summary: string | null;
+  setSummary: (summary: string) => void;
+}
+
+const FileUploader = ({ summary, setSummary }: FileUploaderProps) => {
   const [file, setFile] = useState<File | null>(null);
   const [route, setRoute] = useState("");
   const [fileStatus, setFileStatus] = useState<UploadStatus>("idle");

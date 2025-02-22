@@ -4,7 +4,7 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import { UploadStatus } from "./fileUploader";
+
 import { motion } from "framer-motion";
 
 const Summary = ({ summary }: { summary: string | null }) => {

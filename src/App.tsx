@@ -2,7 +2,7 @@ import "./index.css";
 import FileUploader from "./components/fileUploader";
 import GradientText from "./blocks/TextAnimations/GradientText/GradientText";
 import { useState } from "react";
-import Summary from "./components/summaryCard";
+
 
 const App = () => {
   const [summary, setSummary] = useState<string | null>(null);
